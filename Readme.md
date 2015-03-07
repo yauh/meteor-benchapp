@@ -13,42 +13,42 @@ Meteor runs Node.js, MongoDB, and nginx. Comet is used to act as a client.
 
 ### Setup 1: Test Root for Node.JS
 
-[Config file Node.JS](app/mup.json)
+* [Config file Node.JS](app/mup.json)
 
 Deployment via mup, all requests go directly to Meteor at `http://meteor:3000`
 
 ### Setup 2: Test Root for Nginx as proxy
 
-[Config file Node.JS](app/mup.json)
-[Config file Nginx](config/meteorJustProxy.conf)
+* [Config file Node.JS](app/mup.json)
+* [Config file Nginx](config/meteorJustProxy.conf)
 
 Use the [configuration for nginx as a proxy](config/meteorJustProxy.conf). Nginx forwards all requests to the upstream Node.JS server at Port 3000.
 
 
 ### Setup 3: Test Root for Nginx as proxy + serving static files
 
-[Config file Node.JS](app/mup.json)
-[Config file Nginx](config/meteorServeStatic.conf)
+* [Config file Node.JS](app/mup.json)
+* [Config file Nginx](config/meteorServeStatic.conf)
 
 Similar to setup 2 - proxy all requests to / to Port 3000 (Node.JS), but all requests for CSS, JS, and images are served by Nginx directly.
 
 ### Setup 4: Request an image from Node.JS
 
-[Config file Node.JS](app/mup.json)
+* [Config file Node.JS](app/mup.json)
 
 Similar to the tests before, only this time ab requests an image (100k jpg file). Served from Node.js.
 
 ### Setup 5: Request an image from Nginx as Node.JS proxy
 
-[Config file Node.JS](app/mup.json)
-[Config file Nginx](config/meteorJustProxy.conf)
+* [Config file Node.JS](app/mup.json)
+* [Config file Nginx](config/meteorJustProxy.conf)
 
 Serving the image from Nginx, with a configuration to pass requests to Node.JS.
 
 ### Setup 6: Request an image from Nginx serving static
 
-[Config file Node.JS](app/mup.json)
-[Config file Nginx](config/meteorServeStatic.conf)
+* [Config file Node.JS](app/mup.json)
+* [Config file Nginx](config/meteorServeStatic.conf)
 
 Added static files as locations to Nginx config, serving from Nginx rather than Node.JS.
 
