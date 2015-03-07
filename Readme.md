@@ -61,12 +61,12 @@ Requesting the root path using Apache Bench (ab) with
 `ab -n100000 -c100 -g plotdata.tsv http://meteor/`
 
 | Result | Node.JS | Nginx (just proxy) | Nginx (serving static assets) |
-|--------|---------|-------|
-| Requests | 100000 | 100000|100000 |
-| Time taken (s) | 307.394 |82.325 | 55.778 |
-| Requests per second |325.32 |1214.70 |1792.82 |
-| Time per request (ms) (mean, across all concurrent requests) | 3.074 |0.823|0.558|
-| Transfer rate (Kbytes/sec)|   262.09|1041.51  |1537.21  |
+|--------|---------:|-------:|-------:|
+| Requests | 100000 | 100000 | 100000 |
+| Time taken (s) | 307.394 | 82.325 | 55.778 |
+| Requests per second | 325.32 | 1214.70 | 1792.82 |
+| Time per request (ms) (mean, across all concurrent requests) | 3.074 | 0.823 | 0.558 |
+| Transfer rate (Kbytes/sec) |   262.09 | 1041.51  | 1537.21  |
 
 #### Node.JS
 
@@ -87,7 +87,7 @@ Requesting an image (100018 bytes) with
 `ab -n100000 -c100 -g plotdata.tsv http://meteor/image.jpg`
 
 | Result | Node.JS | Nginx (just proxy) | Nginx (serving static assets) |
-|--------|---------|-------|
+|--------|---------:|-------:|-------:|
 | Requests | 100000 | 100000|100000 |
 | Time taken (s) | 134.426 |107.281  | 65.902 |
 | Requests per second |743.91 | 932.14 |1517.41 |
