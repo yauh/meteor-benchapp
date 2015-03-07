@@ -1,0 +1,54 @@
+stephen@comet:~$ ab -n100000 -c100 -g plotdata.tsv http://meteor:3000/image.jpg
+This is ApacheBench, Version 2.3 <$Revision: 1528965 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking meteor (be patient)
+Completed 10000 requests
+Completed 20000 requests
+Completed 30000 requests
+Completed 40000 requests
+Completed 50000 requests
+Completed 60000 requests
+Completed 70000 requests
+Completed 80000 requests
+Completed 90000 requests
+Completed 100000 requests
+Finished 100000 requests
+
+
+Server Software:
+Server Hostname:        meteor
+Server Port:            3000
+
+Document Path:          /image.jpg
+Document Length:        100018 bytes
+
+Concurrency Level:      100
+Time taken for tests:   134.426 seconds
+Complete requests:      100000
+Failed requests:        0
+Total transferred:      10030200000 bytes
+HTML transferred:       10001800000 bytes
+Requests per second:    743.91 [#/sec] (mean)
+Time per request:       134.426 [ms] (mean)
+Time per request:       1.344 [ms] (mean, across all concurrent requests)
+Transfer rate:          72866.38 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   1.0      0      17
+Processing:    48  134  24.7    136     216
+Waiting:       22   95  20.3     97     176
+Total:         53  134  24.7    137     216
+
+Percentage of the requests served within a certain time (ms)
+  50%    137
+  66%    145
+  75%    151
+  80%    154
+  90%    159
+  95%    163
+  98%    169
+  99%    173
+ 100%    216 (longest request)
