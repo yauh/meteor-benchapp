@@ -131,7 +131,7 @@ Requesting an image (100018 bytes) with
 ## Combined results
 
 | Result | 1a) Node.js (/) | 2a) Node.js (image.jpg) | 1b) Nginx (/, proxy) |  2b) Nginx (image.jpg, proxy) | 3a) Nginx (/, optimized) | 3b) Nginx (image.jpg, optimized) |
-| --                   | --:   | --:    | --:  |  --:   | --:   | --:   |
+| ----                   | ----:   | ----:    | ----:  |  ----:   | ----:   | ----:   |
 | Time for test        | 299   | 145   | 106   |  151   | 108   | 62    |
 | Reqs/s               | 334   | 691   | 940   |  663   | 923   | 1623  |
 | Time per req (ms)    | 2.991 | 1.446 | 1.063 |  1.508 | 1.084 | 0.616 |
@@ -143,7 +143,7 @@ Requesting an image (100018 bytes) with
 Percentage of reqs served in certain time
 
 | Result | 1a) Node.js (/) | 2a) Node.js (image.jpg) | 1b) Nginx (/, proxy) |  2b) Nginx (image.jpg, proxy) | 3a) Nginx (/, optimized) | 3b) Nginx (image.jpg, optimized) |
-| --   | --: | --: | --: | --: | --: | --:  |
+| ----   | ----: | ----: | ----: | ----: | ----: | ----:  |
 | 50%  | 331 | 139 | 105 | 149 | 107 | 60   |
 | 66%  | 346 | 151 | 110 | 167 | 111 | 63   |
 | 75%  | 357 | 154 | 112 | 181 | 114 | 66   |
