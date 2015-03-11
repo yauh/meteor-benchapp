@@ -21,7 +21,7 @@ handlebars@1.0.2
 html-tools@1.0.3
 htmljs@1.0.3
 http@1.0.10
-ian:accounts-ui-bootstrap-3@1.2.33
+ian:accounts-ui-bootstrap-3@1.2.34
 id-map@1.0.2
 iron:controller@1.0.7
 iron:core@1.0.7
@@ -31,6 +31,7 @@ iron:location@1.0.7
 iron:middleware-stack@1.0.7
 iron:router@1.0.7
 iron:url@1.0.7
+jameslefrere:madewithmeteor@0.1.1
 jquery@1.11.3
 json@1.0.2
 launch-screen@1.0.1
